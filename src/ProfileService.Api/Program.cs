@@ -1,9 +1,12 @@
 using ProfileService.Api.OpenApi;
+using ProfileService.Api.Security;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddOpenApiConfiguration();
+builder.Services.AddCorsConfiguration();
+
 
 //builder.Services.AddInfrastructure(builder.Configuration);
 //builder.Services.AddApplication();
