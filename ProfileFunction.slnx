@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="src/ProfileService.Api/ProfileService.Api.csproj" Id="dfd3bf63-a50a-49e7-9d8b-1c2ea6f0379f" />
+  <Project Path="src/ProfileService.Application/ProfileService.Application.csproj" Id="098407be-04f1-4496-99ee-6d62c949635c" />
+  <Project Path="src/ProfileService.Contracts/ProfileService.Contracts.csproj" Id="2c90e310-1625-483a-9e3e-5d082e2e1f9d" />
+  <Project Path="src/ProfileService.Domain/ProfileService.Domain.csproj" Id="0bb9c4a4-02a1-4678-b324-bfc658232b08" />
+  <Project Path="src/ProfileService.Functions/ProfileService.Functions.csproj" Id="0af693c9-8882-44e9-9d4b-2f8253cfdc96" />
+  <Project Path="src/ProfileService.Infrastructure/ProfileService.Infrastructure.csproj" Id="188d9724-8a1c-4423-86ac-34330615294d" />
+</Solution>
