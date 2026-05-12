@@ -6,11 +6,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="Entities\Achievements\" />
-    <Folder Include="Entities\Notifications\" />
-    <Folder Include="Entities\Skills\" />
-    <Folder Include="Entities\Profiles\" />
-  </ItemGroup>
-
 </Project>

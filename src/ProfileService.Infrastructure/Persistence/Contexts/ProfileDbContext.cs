@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using ProfileService.Application.Shared;
+using ProfileService.Domain.Entities.Profiles;
 
 namespace ProfileService.Infrastructure.Persistence.Contexts;
 
@@ -12,5 +13,6 @@ public class ProfileDbContext(DbContextOptions<ProfileDbContext> options) : DbCo
         modelBuilder.ApplyConfigurationsFromAssembly(typeof(ProfileDbContext).Assembly);
     }
 
+    public DbSet<Profile> Profiles => Set<Profile>();
 
 }

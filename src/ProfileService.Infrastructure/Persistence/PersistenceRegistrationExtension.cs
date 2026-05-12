@@ -18,8 +18,7 @@ public static class PersistenceRegistrationExtension
             throw new InvalidOperationException("Connection string 'DefaultConnection' is missing.");
         }
 
-        //services.AddDbContext<ProfileDbContext>(options =>
-        // options.UseSqlServer(connectionString));
+        services.AddDbContext<ProfileDbContext>(options => options.UseSqlServer(connectionString));
 
 
         services.AddScoped<IUnitOfWork>(sp => sp.GetRequiredService<ProfileDbContext>());

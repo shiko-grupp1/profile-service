@@ -6,5 +6,6 @@ public enum ErrorTypes
     NotFound,
     Conflict,
     Unexpected,
-    ExternalServiceError
+    ExternalServiceError,
+    InternalServerError
 }

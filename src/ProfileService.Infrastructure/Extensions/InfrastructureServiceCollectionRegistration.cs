@@ -1,5 +1,7 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using ProfileService.Application.Profiles;
+using ProfileService.Infrastructure.Persistence.Repositories.Profiles;
 
 namespace ProfileService.Infrastructure.Extensions;
 
@@ -9,6 +11,8 @@ public static class InfrastructureServiceCollectionRegistrationExtensions
     {
         ArgumentNullException.ThrowIfNull(services);
         ArgumentNullException.ThrowIfNull(configuration);
+
+        services.AddScoped<IProfileRepository, ProfileRepository>();
 
         //services.AddHttpContextAccessor();
 
